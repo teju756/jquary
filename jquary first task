@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Event using jquery</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<style>
+		.que1,.que2,.que3{
+			border: 2px solid rgb(27, 27, 27);
+			width: 650px;
+			text-align:center;
+			top: 5px;
+			left: 5px;
+            padding: 15px;
+            
+		}
+		.que2{
+			top: 150px;
+			left: 520px;
+            
+		}
+		.que3{
+			top: 250px;
+			left: 1030px;
+            
+		}
+		h3{
+			color: rgb(247, 242, 242);
+			padding: 5px;
+			text-align: left;
+			box-shadow: 0 2px 8px 0 rgb(32 33 361 / 30%);
+            background:linear-gradient(to bottom left,#09fada 20%,#1a1a00 100%);
+            margin: 2px;
+        
+          }
+          #down1,#down2,#down3,#downn1,#downn2,#downn3,#downnn1,#downnn2,#downnn3{
+          	color: rgb(248, 255, 246);
+          	left: 470px;
+          	position:relative;
+          }
+          #down2, #downn2, #downnn2{
+          	left: 370px;
+          }
+          #p1,#p2,#p3,#pp1,#pp2,#pp3,#ppp1,#ppp2,#ppp3{
+          	display: none;
+          }
+
+          ul{
+          	margin: 0px;
+          	text-align: justify;
+          	width: 580px;
+          	font-size: 18px;
+          	margin: 5px;
+            padding: 30px;
+    
+          }
+          p{
+          	font-size: 18px;
+          }
+    </style>
+</head>
+<body>
+
+<div class="que1">
+	<h2> Using Toggle Method</h2>
+	<h3>What is jQuery?<span id="down1"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<p id="p1">jQuery is one of the most popular Javascript liabraries out there.</p>
+
+	<h3> Advantages of jQuery?<span id="down2"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="p2">
+		<li>Use familiar HTML5 technologies to build native-looking apps.</li>
+		<li>Works across multiple platforms.</li>
+		<li>Provides consistent look and feel for mobile applications.</li></ul>
+
+	<h3>Disadvantages ?<span id="down3"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="p3"><li>Relies on the platform's browser,which may or may not support all of the library's features.</li>
+                <li>Doesn't provide native access to some platform features.</li>
+                <li>Performance is slower than true native code.</li></ul>
+</div>
+
+<div class="que2">
+	<h2> Using Show Method</h2>
+	<h3>What is jQuery?<span id="downn1"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<p id="pp1">jQuery is one of the most popular Javascript liabraries out there.</p>
+
+	<h3>Advantages of jQuery?<span id="downn2"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="pp2">
+		<li>Use familiar HTML5 technologies to build native-looking apps.</li>
+		<li>Works across multiple platforms.</li>
+		<li>Provides consistent look and feel for mobile applications.</li></ul>
+
+	<h3>Disadvantages ?<span id="downn3"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="pp3"><li>jQuery it means use them if it makes it easier to develop your application.</li>
+                 <li>Doesn't provide native access to some platform features.</li>
+                 <li>Performance is slower than true native code.</li></ul>
+</div>
+
+<div class="que3">
+	<h2> Using hide Method</h2>
+	<h3>What is jQuery?<span id="downnn1"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<p id="ppp1">jQuery is one of the most popular Javascript liabraries out there.</p>
+
+	<h3>Advantages of jQuery?<span id="downnn2"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="ppp2">
+		<li>Use familiar HTML5 technologies to build native-looking apps.</li>
+		<li>Works across multiple platforms.</li>
+		<li>Provides consistent look and feel for mobile applications.</li></ul>
+
+	<h3>Disadvantages ?<span id="downnn3"><i class="fas fa-sort-down fa-1x"></i></span></h3>
+	<ul id="ppp3"><li>jQuery it means use them if it makes it easier to develop your application.</li>
+                  <li>Doesn't provide native access to some platform features.</li>
+                  <li>Performance is slower than true native code.</li></ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+	$('#down1').click(function(){
+		$('#p1').toggle();
+	})
+    $('#down2').click(function(){
+		$('#p2').toggle();
+	})
+	$('#down3').click(function(){
+		$('#p3').toggle();
+	})
+	$('#downn1').click(function(){
+		$('#pp1').show();
+	})
+    $('#downn2').click(function(){
+		$('#pp2').show();
+	})
+	$('#downn3').click(function(){
+		$('#pp3').show();
+	})
+	$('#downnn1').click(function(){
+		$('#ppp1').hide();
+	})
+    $('#downnn2').click(function(){
+		$('#ppp2').hide();
+	})
+	$('#downnn3').click(function(){
+		$('#ppp3').hide();
+	})
+	</script>
+</script>
+</body>
+</html> 
